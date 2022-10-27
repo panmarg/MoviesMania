@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/pmargaritis/AndroidStudioProjects/MoviesMania/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/top_rated_movie_card.xml",
+        "source": "/Users/pmargaritis/AndroidStudioProjects/MoviesMania/app/src/main/res/layout/top_rated_movie_card.xml"
+    },
+    {
+        "merged": "/Users/pmargaritis/AndroidStudioProjects/MoviesMania/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/pmargaritis/AndroidStudioProjects/MoviesMania/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/pmargaritis/AndroidStudioProjects/MoviesMania/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_top_rated_movie_details.xml",
+        "source": "/Users/pmargaritis/AndroidStudioProjects/MoviesMania/app/src/main/res/layout/activity_top_rated_movie_details.xml"
+    }
+]

@@ -25,12 +25,10 @@ class TopRatedMoviesViewModel(
 
 
     init {
-        runBlocking {
-            launch {
+        viewModelScope.launch {
                 topRatedMoviesRepository.getTopRatedMoviesList().collect {
                     _topRatedMoviesList.postValue(it)
                 }
-            }
         }
 
     }

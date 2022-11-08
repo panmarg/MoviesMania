@@ -20,6 +20,7 @@ id clBackArrow
 id clIMDBRating
 id clTopRatedMovie
 id clTopRatedMovieCard
+id clTopRatedMovieComments
 id clTopRatedMovieDetails
 id clTopRatedMovieDetailsImage
 id clTopRatedMovieStoryline
@@ -28,6 +29,7 @@ id ivTopRatedMovieDetailsImage
 id ivTopRatedMovieImage
 id rvTopRatedMovies
 id tvIMDBRating
+id tvTopRatedMovieCommentsTitle
 id tvTopRatedMovieLanguage
 id tvTopRatedMovieLanguageReleaseDate
 id tvTopRatedMovieRating
@@ -35,6 +37,7 @@ id tvTopRatedMovieReleaseDate
 id tvTopRatedMovieStorylineDetails
 id tvTopRatedMovieStorylineTitle
 id tvTopRatedMovieTitle
+id tvTopRatedMovieUserComments
 layout activity_main
 layout activity_top_rated_movie_details
 layout top_rated_movie_card

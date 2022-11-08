@@ -2644,6 +2644,7 @@ id clBackArrow
 id clIMDBRating
 id clTopRatedMovie
 id clTopRatedMovieCard
+id clTopRatedMovieComments
 id clTopRatedMovieDetails
 id clTopRatedMovieDetailsImage
 id clTopRatedMovieStoryline
@@ -2995,6 +2996,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvIMDBRating
+id tvTopRatedMovieCommentsTitle
 id tvTopRatedMovieLanguage
 id tvTopRatedMovieLanguageReleaseDate
 id tvTopRatedMovieRating
@@ -3002,6 +3004,7 @@ id tvTopRatedMovieReleaseDate
 id tvTopRatedMovieStorylineDetails
 id tvTopRatedMovieStorylineTitle
 id tvTopRatedMovieTitle
+id tvTopRatedMovieUserComments
 id unchecked
 id uniform
 id unlabeled

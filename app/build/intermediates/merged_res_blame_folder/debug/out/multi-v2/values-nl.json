@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/pmargaritis/AndroidStudioProjects/MoviesMania/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
+            "outputFile": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "/Users/pmargaritis/.gradle/caches/transforms-3/f0864f11ad6ba7269af692c790a618e9/transformed/material-1.6.1/res/values-nl/values-nl.xml",

@@ -2,10 +2,13 @@ package com.example.moviesmania
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.moviesmania.api.Constants
 import com.example.moviesmania.data.TopRatedMovie
 import com.example.moviesmania.databinding.ActivityTopRatedMovieDetailsBinding
+import com.example.moviesmania.fragments.AddCommentFragment
+import com.example.moviesmania.fragments.UserCommentsFragment
 import com.google.gson.Gson
 
 class TopRatedMovieDetails : AppCompatActivity() {
@@ -16,6 +19,14 @@ class TopRatedMovieDetails : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         var binding = ActivityTopRatedMovieDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val commentsFragment = UserCommentsFragment()
+        val addCommentFragment = AddCommentFragment()
+
+
+        fragmentToDisplay(commentsFragment)
+
+
 
         val topRatedMovieObj =
             gson.fromJson(intent.getStringExtra("topRatedMovieObj"), TopRatedMovie::class.java)
@@ -32,5 +43,24 @@ class TopRatedMovieDetails : AppCompatActivity() {
         binding.tvIMDBRating.text = "IMDB: " +topRatedMovieObj.vote_average
         binding.tvTopRatedMovieStorylineDetails.text = topRatedMovieObj.overview
 
+
+        binding.tvTopRatedMovieAddComment.setOnClickListener {
+            fragmentToDisplay(addCommentFragment)
+        }
+
+        binding.tvTopRatedMovieUserComments.setOnClickListener {
+            fragmentToDisplay(commentsFragment)
+        }
+
+
+
+    }
+
+
+    private fun fragmentToDisplay(fragment: Fragment){
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fcvComments, fragment)
+            commit()
+        }
     }
 }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MoviesMania</string>
+    <string name="et_username">Username</string>
+    <string name="et_comment">Comment</string>
 </resources>

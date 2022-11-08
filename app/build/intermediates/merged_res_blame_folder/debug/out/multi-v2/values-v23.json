@@ -1,21 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "com.example.moviesmania.app-mergeDebugResources-35:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/84d164a6cd98f245361f5b4b77cf2a53/transformed/appcompat-1.5.1/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,190,325,400,487,1225,1975,2094,2221,2443,2667,2782,2889,3002",
-                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
-                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
-                        "endOffsets": "185,320,395,482,1220,1970,2089,2216,2438,2662,2777,2884,2997,3227"
-                    }
-                },
-                {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/7e1d7580135d94ce1e7d324c560c75d4/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/3c2d63bff94ea8f7d21fdaf78ad265c3/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -34,7 +23,18 @@
                     }
                 },
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/f0864f11ad6ba7269af692c790a618e9/transformed/material-1.6.1/res/values-v23/values-v23.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/4900f99140626989b1f2244ac78fd260/transformed/appcompat-1.5.1/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1225,1975,2094,2221,2443,2667,2782,2889,3002",
+                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1220,1970,2089,2216,2438,2662,2777,2884,2997,3227"
+                    }
+                },
+                {
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/25db5d3429771a9e0f63daa3662e92bf/transformed/material-1.6.1/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "com.example.moviesmania.app-mergeDebugResources-35:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/84d164a6cd98f245361f5b4b77cf2a53/transformed/appcompat-1.5.1/res/values-v26/values-v26.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/4900f99140626989b1f2244ac78fd260/transformed/appcompat-1.5.1/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

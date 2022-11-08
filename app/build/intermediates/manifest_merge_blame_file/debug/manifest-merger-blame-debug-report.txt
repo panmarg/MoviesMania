@@ -15,22 +15,22 @@
 11-->/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/AndroidManifest.xml:5:22-64
 12
 13    <permission
-13-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/e0b3b1b31325e53dda53d33171c4c315/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+13-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/2f31b9f4cdd22cbe81af136a9f8a3e18/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
 14        android:name="com.example.moviesmania.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/e0b3b1b31325e53dda53d33171c4c315/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+14-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/2f31b9f4cdd22cbe81af136a9f8a3e18/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
 15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/e0b3b1b31325e53dda53d33171c4c315/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+15-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/2f31b9f4cdd22cbe81af136a9f8a3e18/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
 16
 17    <uses-permission android:name="com.example.moviesmania.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/e0b3b1b31325e53dda53d33171c4c315/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/e0b3b1b31325e53dda53d33171c4c315/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+17-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/2f31b9f4cdd22cbe81af136a9f8a3e18/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/2f31b9f4cdd22cbe81af136a9f8a3e18/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 18
 19    <application
 19-->/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/AndroidManifest.xml:7:5-27:19
 20        android:allowBackup="true"
 20-->/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/AndroidManifest.xml:8:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/e0b3b1b31325e53dda53d33171c4c315/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+21-->[androidx.core:core:1.9.0] /Users/pmargaritis/.gradle/caches/transforms-3/2f31b9f4cdd22cbe81af136a9f8a3e18/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 22        android:debuggable="true"
 23        android:icon="@mipmap/ic_launcher"
 23-->/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/AndroidManifest.xml:9:9-43
@@ -69,26 +69,35 @@
 41        </activity>
 42
 43        <provider
-43-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/acbe62069bb7d8ae182b4d3ae59f5f61/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+43-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/388ad79f26d114885d7cdc15410c16b7/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 44            android:name="androidx.startup.InitializationProvider"
-44-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/acbe62069bb7d8ae182b4d3ae59f5f61/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+44-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/388ad79f26d114885d7cdc15410c16b7/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
 45            android:authorities="com.example.moviesmania.androidx-startup"
-45-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/acbe62069bb7d8ae182b4d3ae59f5f61/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+45-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/388ad79f26d114885d7cdc15410c16b7/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
 46            android:exported="false" >
-46-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/acbe62069bb7d8ae182b4d3ae59f5f61/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+46-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/388ad79f26d114885d7cdc15410c16b7/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
 47            <meta-data
-47-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/acbe62069bb7d8ae182b4d3ae59f5f61/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+47-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/388ad79f26d114885d7cdc15410c16b7/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
 48                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-48-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/acbe62069bb7d8ae182b4d3ae59f5f61/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+48-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/388ad79f26d114885d7cdc15410c16b7/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 49                android:value="androidx.startup" />
-49-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/acbe62069bb7d8ae182b4d3ae59f5f61/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+49-->[androidx.emoji2:emoji2:1.2.0] /Users/pmargaritis/.gradle/caches/transforms-3/388ad79f26d114885d7cdc15410c16b7/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
 50            <meta-data
-50-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/pmargaritis/.gradle/caches/transforms-3/41d3faa5d68f6248713d3f9233905c33/transformed/lifecycle-process-2.5.1/AndroidManifest.xml:31:13-33:52
+50-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/pmargaritis/.gradle/caches/transforms-3/326f8ce7eafb83f9240943b581dbf929/transformed/lifecycle-process-2.5.1/AndroidManifest.xml:31:13-33:52
 51                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-51-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/pmargaritis/.gradle/caches/transforms-3/41d3faa5d68f6248713d3f9233905c33/transformed/lifecycle-process-2.5.1/AndroidManifest.xml:32:17-78
+51-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/pmargaritis/.gradle/caches/transforms-3/326f8ce7eafb83f9240943b581dbf929/transformed/lifecycle-process-2.5.1/AndroidManifest.xml:32:17-78
 52                android:value="androidx.startup" />
-52-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/pmargaritis/.gradle/caches/transforms-3/41d3faa5d68f6248713d3f9233905c33/transformed/lifecycle-process-2.5.1/AndroidManifest.xml:33:17-49
+52-->[androidx.lifecycle:lifecycle-process:2.5.1] /Users/pmargaritis/.gradle/caches/transforms-3/326f8ce7eafb83f9240943b581dbf929/transformed/lifecycle-process-2.5.1/AndroidManifest.xml:33:17-49
 53        </provider>
-54    </application>
-55
-56</manifest>
+54
+55        <service
+55-->[androidx.room:room-runtime:2.4.3] /Users/pmargaritis/.gradle/caches/transforms-3/1b79cb691e0bc3486a289fa973417654/transformed/room-runtime-2.4.3/AndroidManifest.xml:25:9-28:40
+56            android:name="androidx.room.MultiInstanceInvalidationService"
+56-->[androidx.room:room-runtime:2.4.3] /Users/pmargaritis/.gradle/caches/transforms-3/1b79cb691e0bc3486a289fa973417654/transformed/room-runtime-2.4.3/AndroidManifest.xml:26:13-74
+57            android:directBootAware="true"
+57-->[androidx.room:room-runtime:2.4.3] /Users/pmargaritis/.gradle/caches/transforms-3/1b79cb691e0bc3486a289fa973417654/transformed/room-runtime-2.4.3/AndroidManifest.xml:27:13-43
+58            android:exported="false" />
+58-->[androidx.room:room-runtime:2.4.3] /Users/pmargaritis/.gradle/caches/transforms-3/1b79cb691e0bc3486a289fa973417654/transformed/room-runtime-2.4.3/AndroidManifest.xml:28:13-37
+59    </application>
+60
+61</manifest>

@@ -1,90 +1,122 @@
 [
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/drawable_ic_arrow_back.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/drawable/ic_arrow_back.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable_imdb_rating_bg.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/drawable/imdb_rating_bg.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/layout_activity_top_rated_movie_details.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/layout/activity_top_rated_movie_details.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/drawable_top_rated_movie_details_bg.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/drawable/top_rated_movie_details_bg.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable_ic_user.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/drawable/ic_user.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable_gradient.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/drawable/gradient.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/layout_activity_top_rated_movie_details.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/layout/activity_top_rated_movie_details.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/layout_user_comments_fragment.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/layout/user_comments_fragment.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-pngs-32:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/drawable_rating_bg.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/drawable/rating_bg.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/layout_user_comment.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/layout/user_comment.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/layout_top_rated_movie_card.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/layout/top_rated_movie_card.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable_ic_comment.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/drawable/ic_comment.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/layout_top_rated_movie_card.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/layout/top_rated_movie_card.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.moviesmania.app-merged_res-37:/layout_user_comments_fragment.xml.flat",
+        "source": "com.example.moviesmania.app-main-39:/layout/user_comments_fragment.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/drawable_imdb_rating_bg.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/drawable/imdb_rating_bg.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable_rating_bg.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/drawable/rating_bg.xml"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/merged_res/debug/drawable_gradient.xml.flat",
-        "source": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/src/main/res/drawable/gradient.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable_top_rated_movie_details_bg.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/drawable/top_rated_movie_details_bg.xml"
+    },
+    {
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/layout_add_comment_fragment.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/layout/add_comment_fragment.xml"
+    },
+    {
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable_ic_arrow_back.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/layout_activity_main.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable_add_comment.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/drawable/add_comment.xml"
+    },
+    {
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-merged_res-37:/drawable_custom_input_bg.xml.flat",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-39:/drawable/custom_input_bg.xml"
     }
 ]

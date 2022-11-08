@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml",
+            "outputFile": "com.example.moviesmania.app-mergeDebugResources-35:/values-es-rUS/values-es-rUS.xml",
             "map": [
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/f0864f11ad6ba7269af692c790a618e9/transformed/material-1.6.1/res/values-es-rUS/values-es-rUS.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/25db5d3429771a9e0f63daa3662e92bf/transformed/material-1.6.1/res/values-es-rUS/values-es-rUS.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/84d164a6cd98f245361f5b4b77cf2a53/transformed/appcompat-1.5.1/res/values-es-rUS/values-es-rUS.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/4900f99140626989b1f2244ac78fd260/transformed/appcompat-1.5.1/res/values-es-rUS/values-es-rUS.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/e0b3b1b31325e53dda53d33171c4c315/transformed/core-1.9.0/res/values-es-rUS/values-es-rUS.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/2f31b9f4cdd22cbe81af136a9f8a3e18/transformed/core-1.9.0/res/values-es-rUS/values-es-rUS.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

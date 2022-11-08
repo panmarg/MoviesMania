@@ -5,10 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.moviesmania.R;
@@ -18,7 +20,7 @@ import java.lang.String;
 
 public final class ActivityTopRatedMovieDetailsBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final ConstraintLayout clBackArrow;
@@ -39,13 +41,16 @@ public final class ActivityTopRatedMovieDetailsBinding implements ViewBinding {
   public final ConstraintLayout clTopRatedMovieStoryline;
 
   @NonNull
+  public final FragmentContainerView fcvComments;
+
+  @NonNull
   public final ImageView ivTopRatedMovieDetailsImage;
 
   @NonNull
   public final TextView tvIMDBRating;
 
   @NonNull
-  public final TextView tvTopRatedMovieCommentsTitle;
+  public final TextView tvTopRatedMovieAddComment;
 
   @NonNull
   public final TextView tvTopRatedMovieLanguageReleaseDate;
@@ -62,14 +67,14 @@ public final class ActivityTopRatedMovieDetailsBinding implements ViewBinding {
   @NonNull
   public final TextView tvTopRatedMovieUserComments;
 
-  private ActivityTopRatedMovieDetailsBinding(@NonNull ConstraintLayout rootView,
+  private ActivityTopRatedMovieDetailsBinding(@NonNull ScrollView rootView,
       @NonNull ConstraintLayout clBackArrow, @NonNull ConstraintLayout clIMDBRating,
       @NonNull ConstraintLayout clTopRatedMovieComments,
       @NonNull ConstraintLayout clTopRatedMovieDetails,
       @NonNull ConstraintLayout clTopRatedMovieDetailsImage,
       @NonNull ConstraintLayout clTopRatedMovieStoryline,
-      @NonNull ImageView ivTopRatedMovieDetailsImage, @NonNull TextView tvIMDBRating,
-      @NonNull TextView tvTopRatedMovieCommentsTitle,
+      @NonNull FragmentContainerView fcvComments, @NonNull ImageView ivTopRatedMovieDetailsImage,
+      @NonNull TextView tvIMDBRating, @NonNull TextView tvTopRatedMovieAddComment,
       @NonNull TextView tvTopRatedMovieLanguageReleaseDate,
       @NonNull TextView tvTopRatedMovieStorylineDetails,
       @NonNull TextView tvTopRatedMovieStorylineTitle, @NonNull TextView tvTopRatedMovieTitle,
@@ -81,9 +86,10 @@ public final class ActivityTopRatedMovieDetailsBinding implements ViewBinding {
     this.clTopRatedMovieDetails = clTopRatedMovieDetails;
     this.clTopRatedMovieDetailsImage = clTopRatedMovieDetailsImage;
     this.clTopRatedMovieStoryline = clTopRatedMovieStoryline;
+    this.fcvComments = fcvComments;
     this.ivTopRatedMovieDetailsImage = ivTopRatedMovieDetailsImage;
     this.tvIMDBRating = tvIMDBRating;
-    this.tvTopRatedMovieCommentsTitle = tvTopRatedMovieCommentsTitle;
+    this.tvTopRatedMovieAddComment = tvTopRatedMovieAddComment;
     this.tvTopRatedMovieLanguageReleaseDate = tvTopRatedMovieLanguageReleaseDate;
     this.tvTopRatedMovieStorylineDetails = tvTopRatedMovieStorylineDetails;
     this.tvTopRatedMovieStorylineTitle = tvTopRatedMovieStorylineTitle;
@@ -93,7 +99,7 @@ public final class ActivityTopRatedMovieDetailsBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -154,6 +160,12 @@ public final class ActivityTopRatedMovieDetailsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fcvComments;
+      FragmentContainerView fcvComments = ViewBindings.findChildViewById(rootView, id);
+      if (fcvComments == null) {
+        break missingId;
+      }
+
       id = R.id.ivTopRatedMovieDetailsImage;
       ImageView ivTopRatedMovieDetailsImage = ViewBindings.findChildViewById(rootView, id);
       if (ivTopRatedMovieDetailsImage == null) {
@@ -166,9 +178,9 @@ public final class ActivityTopRatedMovieDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvTopRatedMovieCommentsTitle;
-      TextView tvTopRatedMovieCommentsTitle = ViewBindings.findChildViewById(rootView, id);
-      if (tvTopRatedMovieCommentsTitle == null) {
+      id = R.id.tvTopRatedMovieAddComment;
+      TextView tvTopRatedMovieAddComment = ViewBindings.findChildViewById(rootView, id);
+      if (tvTopRatedMovieAddComment == null) {
         break missingId;
       }
 
@@ -202,12 +214,12 @@ public final class ActivityTopRatedMovieDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTopRatedMovieDetailsBinding((ConstraintLayout) rootView, clBackArrow,
+      return new ActivityTopRatedMovieDetailsBinding((ScrollView) rootView, clBackArrow,
           clIMDBRating, clTopRatedMovieComments, clTopRatedMovieDetails,
-          clTopRatedMovieDetailsImage, clTopRatedMovieStoryline, ivTopRatedMovieDetailsImage,
-          tvIMDBRating, tvTopRatedMovieCommentsTitle, tvTopRatedMovieLanguageReleaseDate,
-          tvTopRatedMovieStorylineDetails, tvTopRatedMovieStorylineTitle, tvTopRatedMovieTitle,
-          tvTopRatedMovieUserComments);
+          clTopRatedMovieDetailsImage, clTopRatedMovieStoryline, fcvComments,
+          ivTopRatedMovieDetailsImage, tvIMDBRating, tvTopRatedMovieAddComment,
+          tvTopRatedMovieLanguageReleaseDate, tvTopRatedMovieStorylineDetails,
+          tvTopRatedMovieStorylineTitle, tvTopRatedMovieTitle, tvTopRatedMovieUserComments);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

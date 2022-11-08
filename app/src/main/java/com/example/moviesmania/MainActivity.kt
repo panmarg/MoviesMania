@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             }
 
 
+
         binding.rvTopRatedMovies.layoutManager = LinearLayoutManager(this)
         binding.rvTopRatedMovies.adapter = topRatedMoviesAdapter
 

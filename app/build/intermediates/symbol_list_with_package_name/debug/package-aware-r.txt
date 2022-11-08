@@ -2444,6 +2444,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add_comment
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -2454,6 +2455,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable custom_input_bg
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2462,6 +2464,7 @@ drawable design_snackbar_background
 drawable gradient
 drawable ic_arrow_back
 drawable ic_clock_black_24dp
+drawable ic_comment
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2472,6 +2475,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_user
 drawable imdb_rating_bg
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -2640,7 +2644,9 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id clAddComment
 id clBackArrow
+id clComment
 id clIMDBRating
 id clTopRatedMovie
 id clTopRatedMovieCard
@@ -2648,6 +2654,7 @@ id clTopRatedMovieComments
 id clTopRatedMovieDetails
 id clTopRatedMovieDetailsImage
 id clTopRatedMovieStoryline
+id clUserComment
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -2713,10 +2720,13 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etComment
+id etUsername
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id fcvComments
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2884,6 +2894,7 @@ id right_side
 id rounded
 id row_index_key
 id rvTopRatedMovies
+id rvUserComments
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2995,8 +3006,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAddComment
 id tvIMDBRating
-id tvTopRatedMovieCommentsTitle
+id tvTopRatedMovieAddComment
 id tvTopRatedMovieLanguage
 id tvTopRatedMovieLanguageReleaseDate
 id tvTopRatedMovieRating
@@ -3005,6 +3017,9 @@ id tvTopRatedMovieStorylineDetails
 id tvTopRatedMovieStorylineTitle
 id tvTopRatedMovieTitle
 id tvTopRatedMovieUserComments
+id tvUserComment
+id tvUserComments
+id tvUsername
 id unchecked
 id uniform
 id unlabeled
@@ -3122,6 +3137,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_top_rated_movie_details
+layout add_comment_fragment
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3213,6 +3229,8 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout top_rated_movie_card
+layout user_comment
+layout user_comments_fragment
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -3254,6 +3272,8 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string error_icon_content_description
+string et_comment
+string et_username
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior

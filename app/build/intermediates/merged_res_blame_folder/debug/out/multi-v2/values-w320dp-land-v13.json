@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/pmargaritis/AndroidStudioProjects/Github-Repositories/MoviesMania/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.example.moviesmania.app-mergeDebugResources-35:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/f0864f11ad6ba7269af692c790a618e9/transformed/material-1.6.1/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/25db5d3429771a9e0f63daa3662e92bf/transformed/material-1.6.1/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

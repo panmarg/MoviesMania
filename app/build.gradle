@@ -51,6 +51,13 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-alpha03'
+
+    // Room components
+    implementation "androidx.room:room-ktx:2.4.3"
+    kapt "androidx.room:room-compiler:2.4.3"
+    androidTestImplementation "androidx.room:room-testing:2.4.3"
+
 
 
     implementation 'com.github.bumptech.glide:glide:4.14.2'

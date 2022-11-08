@@ -12,25 +12,6 @@ class TopRatedMoviesRepository (
     private val retrofit = RetrofitClient.getInstance()
     private val apiInterface = retrofit.create(ApiInterface::class.java)
 
-//    suspend fun getTopRatedMoviesList() : TopRatedMoviesList? {
-//        try {
-//            val response = apiInterface.getTopRatedMovies("1")
-//            if (response.isSuccessful) {
-//                if (response.body()?.results?.size!! <= 0) {
-//                    println("Response - No Data " + response.body()?.results?.size!!)
-//                } else {
-//                    return response.body()!!
-//                }
-//            } else {
-//                println("Response - Error Body " + response.errorBody().toString())
-//            }
-//        } catch (Ex: Exception) {
-//            println("Error " + Ex.localizedMessage)
-//        }
-//        return null
-//    }
-
-
     suspend fun getTopRatedMoviesList() : Flow<List<TopRatedMovie>>{
         return flow {
             try {

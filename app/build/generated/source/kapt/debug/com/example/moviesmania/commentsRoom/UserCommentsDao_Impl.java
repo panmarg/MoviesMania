@@ -33,7 +33,7 @@ public final class UserCommentsDao_Impl implements UserCommentsDao {
     this.__insertionAdapterOfUserCommentsEntity = new EntityInsertionAdapter<UserCommentsEntity>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `user_comments-table` (`userId`,`username`,`comment`) VALUES (nullif(?, 0),?,?)";
+        return "INSERT OR ABORT INTO `user_comments-table` (`userId`,`username`,`comment`,`commentDate`) VALUES (nullif(?, 0),?,?,?)";
       }
 
       @Override
@@ -48,6 +48,11 @@ public final class UserCommentsDao_Impl implements UserCommentsDao {
           stmt.bindNull(3);
         } else {
           stmt.bindString(3, value.getComment());
+        }
+        if (value.getCommentDate() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getCommentDate());
         }
       }
     };
@@ -83,6 +88,7 @@ public final class UserCommentsDao_Impl implements UserCommentsDao {
           final int _cursorIndexOfUserId = CursorUtil.getColumnIndexOrThrow(_cursor, "userId");
           final int _cursorIndexOfUsername = CursorUtil.getColumnIndexOrThrow(_cursor, "username");
           final int _cursorIndexOfComment = CursorUtil.getColumnIndexOrThrow(_cursor, "comment");
+          final int _cursorIndexOfCommentDate = CursorUtil.getColumnIndexOrThrow(_cursor, "commentDate");
           final List<UserCommentsEntity> _result = new ArrayList<UserCommentsEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final UserCommentsEntity _item;
@@ -100,7 +106,13 @@ public final class UserCommentsDao_Impl implements UserCommentsDao {
             } else {
               _tmpComment = _cursor.getString(_cursorIndexOfComment);
             }
-            _item = new UserCommentsEntity(_tmpUserId,_tmpUsername,_tmpComment);
+            final String _tmpCommentDate;
+            if (_cursor.isNull(_cursorIndexOfCommentDate)) {
+              _tmpCommentDate = null;
+            } else {
+              _tmpCommentDate = _cursor.getString(_cursorIndexOfCommentDate);
+            }
+            _item = new UserCommentsEntity(_tmpUserId,_tmpUsername,_tmpComment,_tmpCommentDate);
             _result.add(_item);
           }
           return _result;

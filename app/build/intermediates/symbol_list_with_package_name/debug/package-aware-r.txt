@@ -3008,6 +3008,7 @@ id transition_transform
 id triangle
 id tvAddComment
 id tvIMDBRating
+id tvNoComments
 id tvTopRatedMovieAddComment
 id tvTopRatedMovieLanguage
 id tvTopRatedMovieLanguageReleaseDate
@@ -3018,6 +3019,7 @@ id tvTopRatedMovieStorylineTitle
 id tvTopRatedMovieTitle
 id tvTopRatedMovieUserComments
 id tvUserComment
+id tvUserCommentDate
 id tvUsername
 id unchecked
 id uniform

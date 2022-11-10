@@ -29,15 +29,20 @@ public final class UserCommentBinding implements ViewBinding {
   public final TextView tvUserComment;
 
   @NonNull
+  public final TextView tvUserCommentDate;
+
+  @NonNull
   public final TextView tvUsername;
 
   private UserCommentBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout clComment, @NonNull ConstraintLayout clUserComment,
-      @NonNull TextView tvUserComment, @NonNull TextView tvUsername) {
+      @NonNull TextView tvUserComment, @NonNull TextView tvUserCommentDate,
+      @NonNull TextView tvUsername) {
     this.rootView = rootView;
     this.clComment = clComment;
     this.clUserComment = clUserComment;
     this.tvUserComment = tvUserComment;
+    this.tvUserCommentDate = tvUserCommentDate;
     this.tvUsername = tvUsername;
   }
 
@@ -82,6 +87,12 @@ public final class UserCommentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvUserCommentDate;
+      TextView tvUserCommentDate = ViewBindings.findChildViewById(rootView, id);
+      if (tvUserCommentDate == null) {
+        break missingId;
+      }
+
       id = R.id.tvUsername;
       TextView tvUsername = ViewBindings.findChildViewById(rootView, id);
       if (tvUsername == null) {
@@ -89,7 +100,7 @@ public final class UserCommentBinding implements ViewBinding {
       }
 
       return new UserCommentBinding((ConstraintLayout) rootView, clComment, clUserComment,
-          tvUserComment, tvUsername);
+          tvUserComment, tvUserCommentDate, tvUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

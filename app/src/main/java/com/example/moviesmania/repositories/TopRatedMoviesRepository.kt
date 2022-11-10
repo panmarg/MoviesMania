@@ -2,20 +2,20 @@ package com.example.moviesmania.repositories
 
 import com.example.moviesmania.api.ApiInterface
 import com.example.moviesmania.data.TopRatedMovie
-import com.example.moviesmania.network.RetrofitClient
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
+
+interface TopRatedMoviesRepository{
+    suspend fun getTopRatedMoviesList() : Flow<List<TopRatedMovie>>
+}
 
 
-class TopRatedMoviesRepository (
-) {
-    private val retrofit = RetrofitClient.getInstance()
-    private val apiInterface = retrofit.create(ApiInterface::class.java)
-
-    suspend fun getTopRatedMoviesList() : Flow<List<TopRatedMovie>>{
+class TopRatedMoviesRepositoryImpl @Inject constructor(private val apiInterface: ApiInterface) : TopRatedMoviesRepository {
+    override suspend fun getTopRatedMoviesList() : Flow<List<TopRatedMovie>>{
         return flow {
             try {
-                val response = apiInterface.getTopRatedMovies("5")
+                val response = apiInterface.getTopRatedMovies("1")
                 if (response.isSuccessful) {
                 if (response.body()?.results?.size!! <= 0) {
                     println("Response - No Data " + response.body()?.results?.size!!)

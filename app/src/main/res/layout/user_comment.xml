@@ -18,7 +18,7 @@
             android:id="@+id/clUserComment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
+            android:background="@color/basicYellow"
             android:padding="10dp">
 
 
@@ -27,8 +27,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
+                android:layout_marginBottom="5dp"
                 app:layout_constraintStart_toStartOf="@+id/clUserComment"
                 app:layout_constraintTop_toTopOf="@+id/clUserComment" />
 
@@ -39,8 +40,20 @@
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
                 android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
                 app:layout_constraintStart_toStartOf="@+id/tvUsername"
                 app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
+
+
+            <TextView
+                android:id="@+id/tvUserCommentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/tvUserComment"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserComment" />
 
 
 

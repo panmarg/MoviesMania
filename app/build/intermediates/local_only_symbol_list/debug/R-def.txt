@@ -41,6 +41,7 @@ id rvTopRatedMovies
 id rvUserComments
 id tvAddComment
 id tvIMDBRating
+id tvNoComments
 id tvTopRatedMovieAddComment
 id tvTopRatedMovieLanguage
 id tvTopRatedMovieLanguageReleaseDate
@@ -51,6 +52,7 @@ id tvTopRatedMovieStorylineTitle
 id tvTopRatedMovieTitle
 id tvTopRatedMovieUserComments
 id tvUserComment
+id tvUserCommentDate
 id tvUsername
 layout activity_main
 layout activity_top_rated_movie_details

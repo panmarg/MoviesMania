@@ -17,12 +17,16 @@ import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_andro
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewModelComponentBuilder;
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewWithFragmentComponentBuilder;
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_components_SingletonComponent;
+import hilt_aggregated_deps._com_example_moviesmania_MainActivity_GeneratedInjector;
 import hilt_aggregated_deps._com_example_moviesmania_TopRatedMovieDetails_GeneratedInjector;
 import hilt_aggregated_deps._com_example_moviesmania_di_DatabaseModule;
 import hilt_aggregated_deps._com_example_moviesmania_di_MovieManiaApp_GeneratedInjector;
 import hilt_aggregated_deps._com_example_moviesmania_di_RepositoryModule;
+import hilt_aggregated_deps._com_example_moviesmania_di_RetrofitModule;
 import hilt_aggregated_deps._com_example_moviesmania_fragments_AddCommentFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_example_moviesmania_fragments_UserCommentsFragment_GeneratedInjector;
+import hilt_aggregated_deps._com_example_moviesmania_viewmodel_TopRatedMoviesViewModel_HiltModules_BindsModule;
+import hilt_aggregated_deps._com_example_moviesmania_viewmodel_TopRatedMoviesViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._com_example_moviesmania_viewmodel_UserCommentsViewModel_HiltModules_BindsModule;
 import hilt_aggregated_deps._com_example_moviesmania_viewmodel_UserCommentsViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint;
@@ -64,12 +68,16 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _dagger_hilt_components_SingletonComponent.class
     },
     aggregatedDeps = {
+        _com_example_moviesmania_MainActivity_GeneratedInjector.class,
         _com_example_moviesmania_TopRatedMovieDetails_GeneratedInjector.class,
         _com_example_moviesmania_di_DatabaseModule.class,
         _com_example_moviesmania_di_MovieManiaApp_GeneratedInjector.class,
         _com_example_moviesmania_di_RepositoryModule.class,
+        _com_example_moviesmania_di_RetrofitModule.class,
         _com_example_moviesmania_fragments_AddCommentFragment_GeneratedInjector.class,
         _com_example_moviesmania_fragments_UserCommentsFragment_GeneratedInjector.class,
+        _com_example_moviesmania_viewmodel_TopRatedMoviesViewModel_HiltModules_BindsModule.class,
+        _com_example_moviesmania_viewmodel_TopRatedMoviesViewModel_HiltModules_KeyModule.class,
         _com_example_moviesmania_viewmodel_UserCommentsViewModel_HiltModules_BindsModule.class,
         _com_example_moviesmania_viewmodel_UserCommentsViewModel_HiltModules_KeyModule.class,
         _dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint.class,

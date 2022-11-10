@@ -44,6 +44,7 @@ class UserCommentsAdapter(
         fun bind(userCommentsEntity: UserCommentsEntity) {
             binding.tvUsername.text = userCommentsEntity.username.substring(0, 1).uppercase() + userCommentsEntity.username.substring(1).lowercase();
             binding.tvUserComment.text = userCommentsEntity.comment
+            binding.tvUserCommentDate.text = userCommentsEntity.commentDate
         }
 
     }

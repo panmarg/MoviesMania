@@ -20,7 +20,6 @@ class UserCommentsFragment : Fragment() {
     private val userCommentsViewModel: UserCommentsViewModel by activityViewModels()
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -39,6 +38,9 @@ class UserCommentsFragment : Fragment() {
         binding?.rvUserComments?.adapter = userCommentsAdapter
         userCommentsViewModel.userComments.observe(viewLifecycleOwner){
             userCommentsAdapter.updateUserCommentsList(it)
+            if(it.isNotEmpty()){
+                binding?.tvNoComments?.visibility = View.GONE
+            }
         }
 
 

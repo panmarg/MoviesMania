@@ -15,14 +15,16 @@ class UserCommentsViewModel @Inject constructor(private val userCommentsReposito
     ViewModel() {
 
     private val _userComments = MutableLiveData<List<UserCommentsEntity>>()
+
     val userComments: LiveData<List<UserCommentsEntity>>
         get() = _userComments
+
 
     init {
         getUpdatedComments()
     }
 
-    private fun getUpdatedComments(){
+    private fun getUpdatedComments() {
         viewModelScope.launch {
             userCommentsRepository.getUserComments().collect {
                 _userComments.postValue(it)
@@ -30,7 +32,8 @@ class UserCommentsViewModel @Inject constructor(private val userCommentsReposito
         }
     }
 
-    fun addComment(userCommentsEntity: UserCommentsEntity){
+
+    fun addComment(userCommentsEntity: UserCommentsEntity) {
         viewModelScope.launch {
             userCommentsRepository.addComment(userCommentsEntity)
         }

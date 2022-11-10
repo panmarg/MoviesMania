@@ -11,7 +11,9 @@ data class UserCommentsEntity(
     val username: String,
     @ColumnInfo(name = "comment")
     val comment: String,
+    @ColumnInfo(name = "commentDate")
+    val commentDate: String
 
 ){
-    constructor(username: String, comment: String) : this(0,username,comment)
+    constructor(username: String, comment: String, commentDate: String) : this(0,username,comment, commentDate)
 }

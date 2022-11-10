@@ -1,5 +1,7 @@
 package com.example.moviesmania.di
 
+import com.example.moviesmania.repositories.TopRatedMoviesRepository
+import com.example.moviesmania.repositories.TopRatedMoviesRepositoryImpl
 import com.example.moviesmania.repositories.UserCommentsRepository
 import com.example.moviesmania.repositories.UserCommentsRepositoryImpl
 import dagger.Binds
@@ -12,9 +14,13 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class RepositoryModule {
-
     @Singleton
     @Binds
     abstract fun providesUserCommentsRepository(userCommentsRepositoryImpl : UserCommentsRepositoryImpl)  : UserCommentsRepository
+
+
+    @Singleton
+    @Binds
+    abstract fun providesTopRatedMoviesRepository(topRatedMoviesRepositoryImpl: TopRatedMoviesRepositoryImpl)  : TopRatedMoviesRepository
 }
 

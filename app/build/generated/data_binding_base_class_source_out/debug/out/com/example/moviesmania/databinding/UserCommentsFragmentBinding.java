@@ -4,6 +4,7 @@ package com.example.moviesmania.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -22,10 +23,14 @@ public final class UserCommentsFragmentBinding implements ViewBinding {
   @NonNull
   public final RecyclerView rvUserComments;
 
+  @NonNull
+  public final TextView tvNoComments;
+
   private UserCommentsFragmentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView rvUserComments) {
+      @NonNull RecyclerView rvUserComments, @NonNull TextView tvNoComments) {
     this.rootView = rootView;
     this.rvUserComments = rvUserComments;
+    this.tvNoComments = tvNoComments;
   }
 
   @Override
@@ -61,7 +66,14 @@ public final class UserCommentsFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new UserCommentsFragmentBinding((ConstraintLayout) rootView, rvUserComments);
+      id = R.id.tvNoComments;
+      TextView tvNoComments = ViewBindings.findChildViewById(rootView, id);
+      if (tvNoComments == null) {
+        break missingId;
+      }
+
+      return new UserCommentsFragmentBinding((ConstraintLayout) rootView, rvUserComments,
+          tvNoComments);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,5 +1,6 @@
 package com.example.moviesmania.api;
 
+import androidx.room.Dao;
 import com.example.moviesmania.data.TopRatedMoviesList;
 import retrofit2.Response;
 import retrofit2.http.GET;

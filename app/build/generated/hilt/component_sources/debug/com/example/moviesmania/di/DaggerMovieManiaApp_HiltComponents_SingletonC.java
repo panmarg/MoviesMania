@@ -7,12 +7,18 @@ import android.view.View;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
+import com.example.moviesmania.MainActivity;
 import com.example.moviesmania.TopRatedMovieDetails;
+import com.example.moviesmania.api.ApiInterface;
 import com.example.moviesmania.commentsRoom.UserCommentsDao;
 import com.example.moviesmania.fragments.AddCommentFragment;
 import com.example.moviesmania.fragments.UserCommentsFragment;
+import com.example.moviesmania.repositories.TopRatedMoviesRepository;
+import com.example.moviesmania.repositories.TopRatedMoviesRepositoryImpl;
 import com.example.moviesmania.repositories.UserCommentsRepository;
 import com.example.moviesmania.repositories.UserCommentsRepositoryImpl;
+import com.example.moviesmania.viewmodel.TopRatedMoviesViewModel;
+import com.example.moviesmania.viewmodel.TopRatedMoviesViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.example.moviesmania.viewmodel.UserCommentsViewModel;
 import com.example.moviesmania.viewmodel.UserCommentsViewModel_HiltModules_KeyModule_ProvideFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
@@ -32,11 +38,16 @@ import dagger.hilt.android.internal.modules.ApplicationContextModule;
 import dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.DoubleCheck;
+import dagger.internal.MapBuilder;
 import dagger.internal.Preconditions;
+import dagger.internal.SetBuilder;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
 import javax.inject.Provider;
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Retrofit;
 
 @DaggerGenerated
 @SuppressWarnings({
@@ -78,6 +89,15 @@ public final class DaggerMovieManiaApp_HiltComponents_SingletonC {
     public Builder hiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule(
         HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule hiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule) {
       Preconditions.checkNotNull(hiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule);
+      return this;
+    }
+
+    /**
+     * @deprecated This module is declared, but an instance is not used in the component. This method is a no-op. For more, see https://dagger.dev/unused-modules.
+     */
+    @Deprecated
+    public Builder retrofitModule(RetrofitModule retrofitModule) {
+      Preconditions.checkNotNull(retrofitModule);
       return this;
     }
 
@@ -370,6 +390,10 @@ public final class DaggerMovieManiaApp_HiltComponents_SingletonC {
     }
 
     @Override
+    public void injectMainActivity(MainActivity mainActivity) {
+    }
+
+    @Override
     public void injectTopRatedMovieDetails(TopRatedMovieDetails topRatedMovieDetails) {
     }
 
@@ -380,7 +404,7 @@ public final class DaggerMovieManiaApp_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return Collections.<String>singleton(UserCommentsViewModel_HiltModules_KeyModule_ProvideFactory.provide());
+      return SetBuilder.<String>newSetBuilder(2).add(TopRatedMoviesViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(UserCommentsViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
     }
 
     @Override
@@ -406,6 +430,8 @@ public final class DaggerMovieManiaApp_HiltComponents_SingletonC {
 
     private final ViewModelCImpl viewModelCImpl = this;
 
+    private Provider<TopRatedMoviesViewModel> topRatedMoviesViewModelProvider;
+
     private Provider<UserCommentsViewModel> userCommentsViewModelProvider;
 
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
@@ -421,12 +447,13 @@ public final class DaggerMovieManiaApp_HiltComponents_SingletonC {
     @SuppressWarnings("unchecked")
     private void initialize(final SavedStateHandle savedStateHandleParam,
         final ViewModelLifecycle viewModelLifecycleParam) {
-      this.userCommentsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
+      this.topRatedMoviesViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
+      this.userCommentsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
     }
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return Collections.<String, Provider<ViewModel>>singletonMap("com.example.moviesmania.viewmodel.UserCommentsViewModel", ((Provider) userCommentsViewModelProvider));
+      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(2).put("com.example.moviesmania.viewmodel.TopRatedMoviesViewModel", ((Provider) topRatedMoviesViewModelProvider)).put("com.example.moviesmania.viewmodel.UserCommentsViewModel", ((Provider) userCommentsViewModelProvider)).build();
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -450,7 +477,10 @@ public final class DaggerMovieManiaApp_HiltComponents_SingletonC {
       @Override
       public T get() {
         switch (id) {
-          case 0: // com.example.moviesmania.viewmodel.UserCommentsViewModel 
+          case 0: // com.example.moviesmania.viewmodel.TopRatedMoviesViewModel 
+          return (T) new TopRatedMoviesViewModel(singletonCImpl.providesTopRatedMoviesRepositoryProvider.get());
+
+          case 1: // com.example.moviesmania.viewmodel.UserCommentsViewModel 
           return (T) new UserCommentsViewModel(singletonCImpl.providesUserCommentsRepositoryProvider.get());
 
           default: throw new AssertionError(id);
@@ -532,6 +562,18 @@ public final class DaggerMovieManiaApp_HiltComponents_SingletonC {
 
     private final SingletonCImpl singletonCImpl = this;
 
+    private Provider<HttpLoggingInterceptor> providesHttpLoggingInterceptorProvider;
+
+    private Provider<OkHttpClient> providesOkHttpClientProvider;
+
+    private Provider<Retrofit> providesRetrofitProvider;
+
+    private Provider<ApiInterface> providesApiInterfaceProvider;
+
+    private Provider<TopRatedMoviesRepositoryImpl> topRatedMoviesRepositoryImplProvider;
+
+    private Provider<TopRatedMoviesRepository> providesTopRatedMoviesRepositoryProvider;
+
     private Provider<UserCommentsDao> providesUserCommentsDaoProvider;
 
     private Provider<UserCommentsRepositoryImpl> userCommentsRepositoryImplProvider;
@@ -546,8 +588,14 @@ public final class DaggerMovieManiaApp_HiltComponents_SingletonC {
 
     @SuppressWarnings("unchecked")
     private void initialize(final ApplicationContextModule applicationContextModuleParam) {
-      this.providesUserCommentsDaoProvider = DoubleCheck.provider(new SwitchingProvider<UserCommentsDao>(singletonCImpl, 1));
-      this.userCommentsRepositoryImplProvider = new SwitchingProvider<>(singletonCImpl, 0);
+      this.providesHttpLoggingInterceptorProvider = DoubleCheck.provider(new SwitchingProvider<HttpLoggingInterceptor>(singletonCImpl, 4));
+      this.providesOkHttpClientProvider = DoubleCheck.provider(new SwitchingProvider<OkHttpClient>(singletonCImpl, 3));
+      this.providesRetrofitProvider = DoubleCheck.provider(new SwitchingProvider<Retrofit>(singletonCImpl, 2));
+      this.providesApiInterfaceProvider = DoubleCheck.provider(new SwitchingProvider<ApiInterface>(singletonCImpl, 1));
+      this.topRatedMoviesRepositoryImplProvider = new SwitchingProvider<>(singletonCImpl, 0);
+      this.providesTopRatedMoviesRepositoryProvider = DoubleCheck.provider((Provider) topRatedMoviesRepositoryImplProvider);
+      this.providesUserCommentsDaoProvider = DoubleCheck.provider(new SwitchingProvider<UserCommentsDao>(singletonCImpl, 6));
+      this.userCommentsRepositoryImplProvider = new SwitchingProvider<>(singletonCImpl, 5);
       this.providesUserCommentsRepositoryProvider = DoubleCheck.provider((Provider) userCommentsRepositoryImplProvider);
     }
 
@@ -584,10 +632,25 @@ public final class DaggerMovieManiaApp_HiltComponents_SingletonC {
       @Override
       public T get() {
         switch (id) {
-          case 0: // com.example.moviesmania.repositories.UserCommentsRepositoryImpl 
+          case 0: // com.example.moviesmania.repositories.TopRatedMoviesRepositoryImpl 
+          return (T) new TopRatedMoviesRepositoryImpl(singletonCImpl.providesApiInterfaceProvider.get());
+
+          case 1: // com.example.moviesmania.api.ApiInterface 
+          return (T) RetrofitModule_ProvidesApiInterfaceFactory.providesApiInterface(singletonCImpl.providesRetrofitProvider.get());
+
+          case 2: // retrofit2.Retrofit 
+          return (T) RetrofitModule_ProvidesRetrofitFactory.providesRetrofit(singletonCImpl.providesOkHttpClientProvider.get());
+
+          case 3: // okhttp3.OkHttpClient 
+          return (T) RetrofitModule_ProvidesOkHttpClientFactory.providesOkHttpClient(singletonCImpl.providesHttpLoggingInterceptorProvider.get());
+
+          case 4: // okhttp3.logging.HttpLoggingInterceptor 
+          return (T) RetrofitModule_ProvidesHttpLoggingInterceptorFactory.providesHttpLoggingInterceptor();
+
+          case 5: // com.example.moviesmania.repositories.UserCommentsRepositoryImpl 
           return (T) new UserCommentsRepositoryImpl(singletonCImpl.providesUserCommentsDaoProvider.get());
 
-          case 1: // com.example.moviesmania.commentsRoom.UserCommentsDao 
+          case 6: // com.example.moviesmania.commentsRoom.UserCommentsDao 
           return (T) DatabaseModule_ProvidesUserCommentsDaoFactory.providesUserCommentsDao(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
           default: throw new AssertionError(id);

@@ -37,9 +37,9 @@ public final class UserCommentsDatabase_Impl extends UserCommentsDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `user_comments-table` (`userId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `username` TEXT NOT NULL, `comment` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `user_comments-table` (`userId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `username` TEXT NOT NULL, `comment` TEXT NOT NULL, `commentDate` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '46d3a0df1c9724c988d700fcc7894097')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'dd395394fa713038fa70adc91cfff4b2')");
       }
 
       @Override
@@ -83,10 +83,11 @@ public final class UserCommentsDatabase_Impl extends UserCommentsDatabase {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsUserCommentsTable = new HashMap<String, TableInfo.Column>(3);
+        final HashMap<String, TableInfo.Column> _columnsUserCommentsTable = new HashMap<String, TableInfo.Column>(4);
         _columnsUserCommentsTable.put("userId", new TableInfo.Column("userId", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsUserCommentsTable.put("username", new TableInfo.Column("username", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsUserCommentsTable.put("comment", new TableInfo.Column("comment", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsUserCommentsTable.put("commentDate", new TableInfo.Column("commentDate", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysUserCommentsTable = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesUserCommentsTable = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoUserCommentsTable = new TableInfo("user_comments-table", _columnsUserCommentsTable, _foreignKeysUserCommentsTable, _indicesUserCommentsTable);
@@ -98,7 +99,7 @@ public final class UserCommentsDatabase_Impl extends UserCommentsDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "46d3a0df1c9724c988d700fcc7894097", "a788aec53d4aa898311d2f077631be42");
+    }, "dd395394fa713038fa70adc91cfff4b2", "c50ff87c130cc3bee8096f30bf42c096");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

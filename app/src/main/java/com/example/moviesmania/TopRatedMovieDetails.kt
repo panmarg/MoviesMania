@@ -18,8 +18,8 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class TopRatedMovieDetails : AppCompatActivity() {
+    private val userCommentsViewModel: UserCommentsViewModel by viewModels()
     private val gson = Gson()
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,28 +29,25 @@ class TopRatedMovieDetails : AppCompatActivity() {
 
         val commentsFragment = UserCommentsFragment()
         val addCommentFragment = AddCommentFragment()
-
-        fragmentToDisplay(commentsFragment)
-
         val topRatedMovieObj =
             gson.fromJson(intent.getStringExtra("topRatedMovieObj"), TopRatedMovie::class.java)
-
         binding.clTopRatedMovieDetailsImage.setOnClickListener {
             finish()
         }
+        userCommentsViewModel.userComments.observe(this){
+            binding.tvTopRatedMovieUserComments.text = "Comments (" + it.size.toString() + ")"
+        }
 
-        Glide.with(this).load(Constants.IMAGE_URL + topRatedMovieObj.backdrop_path)
-            .into(binding.ivTopRatedMovieDetailsImage)
-        binding.tvTopRatedMovieTitle.text = topRatedMovieObj.title
-        binding.tvTopRatedMovieLanguageReleaseDate.text =
-            "Language: " + topRatedMovieObj.original_language.uppercase() + " , " + "Release Date: " + topRatedMovieObj.release_date
-        binding.tvIMDBRating.text = "IMDB: " +topRatedMovieObj.vote_average
-        binding.tvTopRatedMovieStorylineDetails.text = topRatedMovieObj.overview
+
+        fragmentToDisplay(commentsFragment)
+        movieDetailsToDisplay(binding, topRatedMovieObj)
+
 
 
         binding.tvTopRatedMovieAddComment.setOnClickListener {
             fragmentToDisplay(addCommentFragment)
         }
+
 
         binding.tvTopRatedMovieUserComments.setOnClickListener {
             fragmentToDisplay(commentsFragment)
@@ -59,11 +56,23 @@ class TopRatedMovieDetails : AppCompatActivity() {
 
 
 
+    }
 
+    private fun movieDetailsToDisplay(
+        binding: ActivityTopRatedMovieDetailsBinding,
+        topRatedMovieObj: TopRatedMovie
+    ) {
+        Glide.with(this).load(Constants.IMAGE_URL + topRatedMovieObj.backdrop_path)
+            .into(binding.ivTopRatedMovieDetailsImage)
+        binding.tvTopRatedMovieTitle.text = topRatedMovieObj.title
+        binding.tvTopRatedMovieLanguageReleaseDate.text =
+            "Language: " + topRatedMovieObj.original_language.uppercase() + " , " + "Release Date: " + topRatedMovieObj.release_date
+        binding.tvIMDBRating.text = "IMDB: " + topRatedMovieObj.vote_average
+        binding.tvTopRatedMovieStorylineDetails.text = topRatedMovieObj.overview
     }
 
 
-    private fun fragmentToDisplay(fragment: Fragment){
+    private fun fragmentToDisplay(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fcvComments, fragment)
             commit()

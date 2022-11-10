@@ -12,6 +12,8 @@ import com.example.moviesmania.commentsRoom.*
 import com.example.moviesmania.databinding.AddCommentFragmentBinding
 import com.example.moviesmania.viewmodel.UserCommentsViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import java.text.SimpleDateFormat
+import java.util.Calendar
 
 @AndroidEntryPoint
 class AddCommentFragment : Fragment() {
@@ -26,18 +28,20 @@ class AddCommentFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = AddCommentFragmentBinding.inflate(inflater, container, false)
-
         return binding!!.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding?.tvAddComment?.text = "Add Comment"
+
+
         binding?.clAddComment?.setOnClickListener {
             val username = binding?.etUsername?.text.toString()
             val comment = binding?.etComment?.text.toString()
+            val currentTime = getCurrentTime()
             if (username.isNotEmpty() && comment.isNotEmpty()) {
-                userCommentsViewModel.addComment(UserCommentsEntity(username, comment))
+                userCommentsViewModel.addComment(UserCommentsEntity(username, comment, currentTime))
                 Toast.makeText(context, "Comment Added!", Toast.LENGTH_LONG).show()
                 binding?.etUsername?.text?.clear()
                 binding?.etComment?.text?.clear()
@@ -51,6 +55,14 @@ class AddCommentFragment : Fragment() {
 
         }
 
+    }
+
+
+    private fun getCurrentTime () : String {
+        val time = Calendar.getInstance().time
+        val formatter = SimpleDateFormat("dd MMMM yyyy HH:mm")
+        val current = formatter.format(time)
+        return current.toString()
     }
 
 

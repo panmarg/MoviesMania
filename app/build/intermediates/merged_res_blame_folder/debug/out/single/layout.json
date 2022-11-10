@@ -1,26 +1,30 @@
 [
     {
-        "merged": "com.example.moviesmania.app-mergeDebugResources-40:/layout/add_comment_fragment.xml",
-        "source": "com.example.moviesmania.app-main-43:/layout/add_comment_fragment.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-mergeDebugResources-40:/layout/top_rated_movie_card.xml",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-43:/layout/top_rated_movie_card.xml"
     },
     {
-        "merged": "com.example.moviesmania.app-mergeDebugResources-40:/layout/user_comment.xml",
-        "source": "com.example.moviesmania.app-main-43:/layout/user_comment.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-mergeDebugResources-40:/layout/user_comment.xml",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-43:/layout/user_comment.xml"
     },
     {
-        "merged": "com.example.moviesmania.app-mergeDebugResources-40:/layout/activity_top_rated_movie_details.xml",
-        "source": "com.example.moviesmania.app-main-43:/layout/activity_top_rated_movie_details.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-mergeDebugResources-40:/layout/add_comment_fragment.xml",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-43:/layout/add_comment_fragment.xml"
     },
     {
-        "merged": "com.example.moviesmania.app-mergeDebugResources-40:/layout/activity_main.xml",
-        "source": "com.example.moviesmania.app-main-43:/layout/activity_main.xml"
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-mergeDebugResources-40:/layout/activity_main.xml",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-43:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-mergeDebugResources-40:/layout/activity_top_rated_movie_details.xml",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-43:/layout/activity_top_rated_movie_details.xml"
+    },
+    {
+        "merged": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-mergeDebugResources-40:/layout/user_comments_fragment.xml",
+        "source": "/Users/pmargaritis/.gradle/daemon/7.4/com.example.moviesmania.app-main-43:/layout/user_comments_fragment.xml"
     },
     {
         "merged": "com.example.moviesmania.app-mergeDebugResources-40:/layout/user_comments_fragment.xml",
         "source": "com.example.moviesmania.app-main-43:/layout/user_comments_fragment.xml"
-    },
-    {
-        "merged": "com.example.moviesmania.app-mergeDebugResources-40:/layout/top_rated_movie_card.xml",
-        "source": "com.example.moviesmania.app-main-43:/layout/top_rated_movie_card.xml"
     }
 ]

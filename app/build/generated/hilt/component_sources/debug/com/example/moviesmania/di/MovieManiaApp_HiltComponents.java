@@ -1,8 +1,10 @@
 package com.example.moviesmania.di;
 
+import com.example.moviesmania.MainActivity_GeneratedInjector;
 import com.example.moviesmania.TopRatedMovieDetails_GeneratedInjector;
 import com.example.moviesmania.fragments.AddCommentFragment_GeneratedInjector;
 import com.example.moviesmania.fragments.UserCommentsFragment_GeneratedInjector;
+import com.example.moviesmania.viewmodel.TopRatedMoviesViewModel_HiltModules;
 import com.example.moviesmania.viewmodel.UserCommentsViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
@@ -123,7 +125,8 @@ public final class MovieManiaApp_HiltComponents {
           HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule.class,
           ActivityRetainedCBuilderModule.class,
           ServiceCBuilderModule.class,
-          RepositoryModule.class
+          RepositoryModule.class,
+          RetrofitModule.class
       }
   )
   @Singleton
@@ -149,6 +152,7 @@ public final class MovieManiaApp_HiltComponents {
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           ActivityCBuilderModule.class,
           ViewModelCBuilderModule.class,
+          TopRatedMoviesViewModel_HiltModules.KeyModule.class,
           UserCommentsViewModel_HiltModules.KeyModule.class
       }
   )
@@ -171,7 +175,8 @@ public final class MovieManiaApp_HiltComponents {
       }
   )
   @ActivityScoped
-  public abstract static class ActivityC implements TopRatedMovieDetails_GeneratedInjector,
+  public abstract static class ActivityC implements MainActivity_GeneratedInjector,
+      TopRatedMovieDetails_GeneratedInjector,
       ActivityComponent,
       DefaultViewModelFactories.ActivityEntryPoint,
       HiltWrapper_HiltViewModelFactory_ActivityCreatorEntryPoint,
@@ -186,6 +191,7 @@ public final class MovieManiaApp_HiltComponents {
   @Subcomponent(
       modules = {
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
+          TopRatedMoviesViewModel_HiltModules.BindsModule.class,
           UserCommentsViewModel_HiltModules.BindsModule.class
       }
   )

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.moviesmania.app-mergeDebugResources-35:/values-v28/values-v28.xml",
+            "outputFile": "com.example.moviesmania.app-mergeDebugResources-39:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/25db5d3429771a9e0f63daa3662e92bf/transformed/material-1.6.1/res/values-v28/values-v28.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/ed3829027c30fcfa283d799d3f5b4126/transformed/material-1.6.1/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/4900f99140626989b1f2244ac78fd260/transformed/appcompat-1.5.1/res/values-v28/values-v28.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/308d69e168905b1dc8d3f99e7f754429/transformed/appcompat-1.5.1/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",

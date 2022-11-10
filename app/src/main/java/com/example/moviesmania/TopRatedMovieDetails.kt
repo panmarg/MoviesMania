@@ -2,17 +2,24 @@ package com.example.moviesmania
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
 import com.example.moviesmania.api.Constants
 import com.example.moviesmania.data.TopRatedMovie
 import com.example.moviesmania.databinding.ActivityTopRatedMovieDetailsBinding
 import com.example.moviesmania.fragments.AddCommentFragment
 import com.example.moviesmania.fragments.UserCommentsFragment
+import com.example.moviesmania.viewmodel.UserCommentsViewModel
 import com.google.gson.Gson
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class TopRatedMovieDetails : AppCompatActivity() {
     private val gson = Gson()
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,10 +30,7 @@ class TopRatedMovieDetails : AppCompatActivity() {
         val commentsFragment = UserCommentsFragment()
         val addCommentFragment = AddCommentFragment()
 
-
         fragmentToDisplay(commentsFragment)
-
-
 
         val topRatedMovieObj =
             gson.fromJson(intent.getStringExtra("topRatedMovieObj"), TopRatedMovie::class.java)
@@ -51,6 +55,8 @@ class TopRatedMovieDetails : AppCompatActivity() {
         binding.tvTopRatedMovieUserComments.setOnClickListener {
             fragmentToDisplay(commentsFragment)
         }
+
+
 
 
 

@@ -5,29 +5,15 @@
     android:layout_height="match_parent">
 
 
-    <TextView
-        android:id="@+id/tvUserComments"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="25dp"
-        android:text="This is the user comments fragment"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvUserComments"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:background="@color/basicYellow"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tvUserComments"
-        app:layout_constraintTop_toTopOf="@+id/tvUserComments" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

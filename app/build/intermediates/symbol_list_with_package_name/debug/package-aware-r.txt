@@ -3018,7 +3018,6 @@ id tvTopRatedMovieStorylineTitle
 id tvTopRatedMovieTitle
 id tvTopRatedMovieUserComments
 id tvUserComment
-id tvUserComments
 id tvUsername
 id unchecked
 id uniform

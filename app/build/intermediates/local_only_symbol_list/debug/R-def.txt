@@ -51,7 +51,6 @@ id tvTopRatedMovieStorylineTitle
 id tvTopRatedMovieTitle
 id tvTopRatedMovieUserComments
 id tvUserComment
-id tvUserComments
 id tvUsername
 layout activity_main
 layout activity_top_rated_movie_details

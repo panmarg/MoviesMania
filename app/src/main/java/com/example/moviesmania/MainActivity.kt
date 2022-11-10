@@ -10,7 +10,6 @@ import com.example.moviesmania.databinding.ActivityMainBinding
 import com.example.moviesmania.viewmodel.TopRatedMoviesViewModel
 import com.google.gson.Gson
 
-
 class MainActivity : AppCompatActivity() {
 
 
@@ -28,8 +27,6 @@ class MainActivity : AppCompatActivity() {
                 onTopRatedMovieClick(it)
             }
 
-
-
         binding.rvTopRatedMovies.layoutManager = LinearLayoutManager(this)
         binding.rvTopRatedMovies.adapter = topRatedMoviesAdapter
 
@@ -42,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun onTopRatedMovieClick(topRatedMovie: TopRatedMovie) {
         val intent = Intent(this, TopRatedMovieDetails::class.java)
-        //Parcalized object
+        //Todo Parcalized object
         intent.putExtra("topRatedMovieObj", gson.toJson(topRatedMovie))
         this.startActivity(intent)
     }

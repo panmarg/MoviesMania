@@ -86,8 +86,8 @@ public final class UserCommentsDao_Impl implements UserCommentsDao {
           final List<UserCommentsEntity> _result = new ArrayList<UserCommentsEntity>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final UserCommentsEntity _item;
-            final int _tmpUserId;
-            _tmpUserId = _cursor.getInt(_cursorIndexOfUserId);
+            final long _tmpUserId;
+            _tmpUserId = _cursor.getLong(_cursorIndexOfUserId);
             final String _tmpUsername;
             if (_cursor.isNull(_cursorIndexOfUsername)) {
               _tmpUsername = null;

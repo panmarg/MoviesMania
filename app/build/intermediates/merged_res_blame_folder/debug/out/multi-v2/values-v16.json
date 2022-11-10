@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.moviesmania.app-mergeDebugResources-35:/values-v16/values-v16.xml",
+            "outputFile": "com.example.moviesmania.app-mergeDebugResources-39:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/4900f99140626989b1f2244ac78fd260/transformed/appcompat-1.5.1/res/values-v16/values-v16.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/407b71d744c046bc9a8bd483082365f8/transformed/core-1.9.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/308d69e168905b1dc8d3f99e7f754429/transformed/appcompat-1.5.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/2f31b9f4cdd22cbe81af136a9f8a3e18/transformed/core-1.9.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

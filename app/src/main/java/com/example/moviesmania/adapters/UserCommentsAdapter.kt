@@ -7,11 +7,16 @@ import com.example.moviesmania.commentsRoom.UserCommentsEntity
 import com.example.moviesmania.databinding.UserCommentBinding
 
 class UserCommentsAdapter(
-    private val userCommentsList: List<UserCommentsEntity>,
-    //private val deleteComment: (commentId: Int) -> Unit
+    private val userCommentsList: List<UserCommentsEntity>
 ) : RecyclerView.Adapter<UserCommentsAdapter.UserCommentsViewHolder>() {
 
     private var _userCommentsList: List<UserCommentsEntity> = userCommentsList
+
+
+    fun updateUserCommentsList(newUserCommentsList: List<UserCommentsEntity>){
+        _userCommentsList = newUserCommentsList
+        notifyDataSetChanged()
+    }
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserCommentsViewHolder {
@@ -37,7 +42,7 @@ class UserCommentsAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(userCommentsEntity: UserCommentsEntity) {
-            binding.tvUsername.text = userCommentsEntity.username
+            binding.tvUsername.text = userCommentsEntity.username.substring(0, 1).uppercase() + userCommentsEntity.username.substring(1).lowercase();
             binding.tvUserComment.text = userCommentsEntity.comment
         }
 

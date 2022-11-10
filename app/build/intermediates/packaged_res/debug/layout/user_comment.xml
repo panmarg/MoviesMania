@@ -8,9 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
         app:cardCornerRadius="5dp"
-        app:cardElevation="9dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintStart_toStartOf="@+id/clComment"
         app:layout_constraintTop_toTopOf="@+id/clComment">
@@ -20,6 +18,7 @@
             android:id="@+id/clUserComment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/white"
             android:padding="10dp">
 
 
@@ -38,26 +37,18 @@
                 android:id="@+id/tvUserComment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/tvUsername"
                 app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
 
-
-
-<!--            <TextView-->
-<!--                android:id="@+id/tvUserCommentDate"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textColor="#BDBCBC"-->
-<!--                android:textSize="14sp"-->
-<!--                android:textStyle="italic"-->
-<!--                app:layout_constraintStart_toStartOf="@+id/tvUserComment"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/tvUserComment" />-->
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.cardview.widget.CardView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

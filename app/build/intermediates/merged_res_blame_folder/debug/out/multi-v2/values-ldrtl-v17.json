@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.moviesmania.app-mergeDebugResources-35:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.example.moviesmania.app-mergeDebugResources-39:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/25db5d3429771a9e0f63daa3662e92bf/transformed/material-1.6.1/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "source": "/Users/pmargaritis/.gradle/caches/transforms-3/ed3829027c30fcfa283d799d3f5b4126/transformed/material-1.6.1/res/values-ldrtl-v17/values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

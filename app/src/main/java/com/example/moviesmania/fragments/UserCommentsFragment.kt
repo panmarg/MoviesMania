@@ -5,18 +5,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
+import androidx.fragment.app.activityViewModels
+import com.example.moviesmania.databinding.UserCommentsFragmentBinding
+import com.example.moviesmania.viewmodel.UserCommentsViewModel
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.moviesmania.adapters.UserCommentsAdapter
-import com.example.moviesmania.commentsRoom.UserCommentsDao
-import com.example.moviesmania.commentsRoom.UserCommentsDatabase
-import com.example.moviesmania.commentsRoom.UserCommentsEntity
-import com.example.moviesmania.databinding.UserCommentsFragmentBinding
-import kotlinx.coroutines.launch
+import dagger.hilt.android.AndroidEntryPoint
 
+
+@AndroidEntryPoint
 class UserCommentsFragment : Fragment() {
 
     private var binding: UserCommentsFragmentBinding? = null
+    private val userCommentsViewModel: UserCommentsViewModel by activityViewModels()
+
 
 
     override fun onCreateView(
@@ -29,26 +31,21 @@ class UserCommentsFragment : Fragment() {
     }
 
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val userCommentsDao = UserCommentsDatabase.getInstance(requireContext()).userCommentsDao()
-        lifecycleScope.launch {
-            userCommentsDao.getAllUserComments().collect {
-                setCommentsIntoList(it, userCommentsDao)
-            }
+        val userCommentsAdapter =
+            UserCommentsAdapter(userCommentsViewModel.userComments.value ?: listOf())
+        binding?.rvUserComments?.layoutManager = LinearLayoutManager(context)
+        binding?.rvUserComments?.adapter = userCommentsAdapter
+        userCommentsViewModel.userComments.observe(viewLifecycleOwner){
+            userCommentsAdapter.updateUserCommentsList(it)
         }
+
+
     }
 
-    private fun setCommentsIntoList(
-        userCommentsList: List<UserCommentsEntity>,
-        userCommentsDao: UserCommentsDao
-    ) {
-        if (userCommentsList.isNotEmpty()) {
-            val userCommentsAdapter = UserCommentsAdapter(userCommentsList)
-            binding?.rvUserComments?.layoutManager = LinearLayoutManager(context)
-            binding?.rvUserComments?.adapter = userCommentsAdapter
-        }
-    }
 
 }
+
+
+
